@@ -1,0 +1,20 @@
+version: '3.4'
+
+networks:
+  default:
+    external:
+        name: network_default
+
+services:
+  app:
+    container_name: serastrip
+    image: lowlandtech/serastrip:latest
+    environment:
+    - VIRTUAL_HOST=app.serastrip.com
+    - LETSENCRYPT_HOST=app.serastrip.com
+    - LETSENCRYPT_EMAIL=wmuntslag@live.nl
+    restart: always
+    expose:
+    - 80
+    labels:
+    - com.centurylinklabs.watchtower.enable='true'
