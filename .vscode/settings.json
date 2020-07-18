@@ -22,5 +22,10 @@
       "src/manifest.webmanifest": true,
       "src/polyfills.ts": true
     },
-    "explorerExclude.backup": null
+    "explorerExclude.backup": null,
+    "files.watcherExclude": {
+      "**/.git/objects/**": true,
+      "**/.git/subtree-cache/**": true,
+      "**/node_modules/*/**": true
+    }
 }
