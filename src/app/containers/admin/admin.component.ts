@@ -1,12 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, HostBinding } from '@angular/core';
 
 @Component({
-  selector: 'llt-admin',
   templateUrl: './admin.component.html',
-  styleUrls: ['./admin.component.scss']
+  styleUrls: ['./admin.component.scss'],
+  encapsulation: ViewEncapsulation.ShadowDom
 })
-export class AdminComponent implements OnInit {
-
+export class AdminContainerComponent implements OnInit {
+  @HostBinding('class.container') class1 = true;
   constructor() { }
 
   ngOnInit(): void {
