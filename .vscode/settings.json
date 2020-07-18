@@ -1,0 +1,23 @@
+{
+    "files.exclude": {
+      "**/.git": true,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/CVS": true,
+      "**/.DS_Store": true,
+      "**/tsconfig.app.json": true,
+      "tsconfig.*json": true,
+      ".gitignore": true,
+      ".editorconfig": true,
+      ".dockerignore": true,
+      "tslint.json": true,
+      ".browserslistrc": true,
+      "ngsw-config.json": true,
+      "package-lock.json": true,
+      "setupJest.ts": true,
+      "node_modules": true,
+      "dist": true,
+      "nginx": true
+    },
+    "explorerExclude.backup": null
+}
