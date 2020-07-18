@@ -17,7 +17,10 @@
       "setupJest.ts": true,
       "node_modules": true,
       "dist": true,
-      "nginx": true
+      "nginx": true,
+      "polyfills.ts": true,
+      "src/manifest.webmanifest": true,
+      "src/polyfills.ts": true
     },
     "explorerExclude.backup": null
 }
