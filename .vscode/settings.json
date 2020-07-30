@@ -1,31 +1,32 @@
 {
-    "files.exclude": {
-      "**/.git": true,
-      "**/.svn": true,
-      "**/.hg": true,
-      "**/CVS": true,
-      "**/.DS_Store": true,
-      "**/tsconfig.app.json": true,
-      "tsconfig.*json": true,
-      ".gitignore": true,
-      ".editorconfig": true,
-      ".dockerignore": true,
-      "tslint.json": true,
-      ".browserslistrc": true,
-      "ngsw-config.json": true,
-      "package-lock.json": true,
-      "setupJest.ts": true,
-      "node_modules": true,
-      "dist": true,
-      "nginx": true,
-      "polyfills.ts": true,
-      "src/manifest.webmanifest": true,
-      "src/polyfills.ts": true
-    },
-    "explorerExclude.backup": null,
-    "files.watcherExclude": {
-      "**/.git/objects/**": true,
-      "**/.git/subtree-cache/**": true,
-      "**/node_modules/*/**": true
-    }
+  "explorerExclude.backup": null,
+  "files.exclude": {
+    ".angulardoc.json": true,
+    ".browserslistrc": true,
+    ".dockerignore": true,
+    ".editorconfig": true,
+    ".gitignore": true,
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.svn": true,
+    "**/CVS": true,
+    "**/tsconfig.app.json": true,
+    "dist": true,
+    "nginx": true,
+    "ngsw-config.json": true,
+    "node_modules": true,
+    "package-lock.json": true,
+    "polyfills.ts": true,
+    "setupJest.ts": true,
+    "src/manifest.webmanifest": true,
+    "src/polyfills.ts": true,
+    "tsconfig.*json": true,
+    "tslint.json": true
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/*/**": true
+  }
 }
