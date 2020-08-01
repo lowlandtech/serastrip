@@ -22,7 +22,8 @@
     "src/manifest.webmanifest": true,
     "src/polyfills.ts": true,
     "tsconfig.*json": true,
-    "tslint.json": true
+    "tslint.json": true,
+    ".git": false
   },
   "files.watcherExclude": {
     "**/.git/objects/**": true,

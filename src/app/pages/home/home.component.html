@@ -1,1 +1,15 @@
-<p>home works!</p>
+<div>
+  <h4>Swipe Avatars with HammerJS</h4>
+  <!-- loop each avatar in our avatar list -->
+  <div class="swipe-box"
+      *ngFor="let avatar of avatars; let idx=index"
+      (swipeup)="swipe(idx, $event.type)" (swipedown)="swipe(idx, $event.type)"
+      [class.visible]="avatar.visible" [class.hidden]="!avatar.visible">
+      <div>
+          <img [src]="avatar.image" [alt]="avatar.name" style="width: 100%;">
+      </div>
+      <div>
+          <a class="header">{{avatar.name}}</a>
+      </div>
+  </div>
+</div>

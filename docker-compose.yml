@@ -9,6 +9,8 @@ services:
   app:
     container_name: serastrip
     image: lowlandtech/serastrip:latest
+    build:
+      context: .
     environment:
     - VIRTUAL_HOST=app.serastrip.com
     - LETSENCRYPT_HOST=app.serastrip.com
