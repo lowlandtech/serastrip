@@ -3,7 +3,7 @@
   <!-- loop each avatar in our avatar list -->
   <div class="swipe-box"
       *ngFor="let avatar of avatars; let idx=index"
-      (swipeleft)="swipe(idx, $event.type)" (swiperight)="swipe(idx, $event.type)"
+      (swipeup)="swipe(idx, $event.type)" (swipedown)="swipe(idx, $event.type)"
       [class.visible]="avatar.visible" [class.hidden]="!avatar.visible">
       <div>
           <img [src]="avatar.image" [alt]="avatar.name" style="width: 100%;">

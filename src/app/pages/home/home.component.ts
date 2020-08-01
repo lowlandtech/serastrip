@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit {
     },
     {
       name: 'chris',
-      image: 'http://semantic-ui.com/images/avatar/large/chris.jpg',
+      image: 'https://semantic-ui.com/images/avatar/large/chris.jpg',
       visible: false
     },
     {
@@ -31,17 +31,16 @@ export class HomeComponent implements OnInit {
       visible: false
     }
   ];
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
-
-
   // action triggered when user swipes
   swipe(currentIndex: number, action = this.SWIPE_ACTION.UP) {
     // out of range
-    if (currentIndex > this.avatars.length || currentIndex < 0) return;
+    if (currentIndex > this.avatars.length || currentIndex < 0) { return; }
 
     let nextIndex = 0;
 
@@ -60,4 +59,5 @@ export class HomeComponent implements OnInit {
     // toggle avatar visibility
     this.avatars.forEach((x, i) => x.visible = (i === nextIndex));
   }
+
 }
