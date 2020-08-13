@@ -6,14 +6,14 @@ networks:
         name: network_default
 
 services:
-  app:
-    container_name: serastrip
-    image: lowlandtech/serastrip:latest
+  stepacard_app:
+    container_name: stepacard
+    image: lowlandtech/stepacard:latest
     build:
       context: .
     environment:
-    - VIRTUAL_HOST=app.serastrip.com
-    - LETSENCRYPT_HOST=app.serastrip.com
+    - VIRTUAL_HOST=stepacard.com
+    - LETSENCRYPT_HOST=stepacard.com
     - LETSENCRYPT_EMAIL=wmuntslag@live.nl
     restart: always
     expose:
